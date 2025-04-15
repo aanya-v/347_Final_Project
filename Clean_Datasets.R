@@ -46,4 +46,13 @@ nrow(combined_df)
 imputed <- kNN(combined_df, k=20)
 summary(imputed$Body_Temp)
 
+combined_df[15000, ]
+combined_df[15001, ]
+
+imputed <- imputed[-(1:15000), ]
+imputed[1, ]
+
+imputed_drop <- imputed %>%
+  select(Gender, Age, Height, Weight, Duration, Heart_Rate, Body_Temp, Calories)
+
 #write.csv(imputed, "imputed.csv", row.names=FALSE)
