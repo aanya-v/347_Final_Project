@@ -60,12 +60,12 @@ Found in the `Datasets for Imputing/` folder. These include:
 
 ---
 
-## 🛠️ Requirements
+## 🛠️ Key Requirements
 
 - Python 3.x
 - Jupyter Notebook
 - pandas, numpy, matplotlib, seaborn
-- scikit-learn, xgboost
+- scikit-learn, sci-py, xgboost, keras
 
 To import dataset:
 ```bash
