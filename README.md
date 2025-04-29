@@ -59,10 +59,18 @@ The core dataset contains the following features:
 ---
 ### Results
 
+Table of error metrics for all models, ordered from least to most error.
 <img width="650" alt="Screenshot 2025-04-29 at 2 58 51 PM" src="https://github.com/user-attachments/assets/3ef6af59-29cf-422a-a458-d578b71da86d" />
+
+Chart of Test MSE and Test MAE results
+<img width="464" alt="Screenshot 2025-04-29 at 3 06 18 PM" src="https://github.com/user-attachments/assets/f26fd32c-d675-4d78-bd09-fe63ff02b91a" />
+
+Chart of R^2
+<img width="421" alt="Screenshot 2025-04-29 at 3 07 21 PM" src="https://github.com/user-attachments/assets/5d2bf928-17fe-4c4f-8e70-abb91031f1dd" />
 
 - The top four performing models were Boosting, Random Forests, Bagging, and kNN.
 - Boosting performed the best.
+- The four features with the most importance according to the boosted model are Duration (0.891), Heart Rate (0.048), Gender (0.037), and Age (0.019).
 ---
 
 ## 🗃️ Additional Datasets
@@ -79,6 +87,16 @@ Found in the `Datasets for Imputing/` folder. These include:
 
 ---
 ### Imputing Results
+
+Chart of Test MSE and MAE for Imputed and Non Imputed datasets.
+
+<img width="383" alt="Screenshot 2025-04-29 at 3 17 24 PM" src="https://github.com/user-attachments/assets/706836c8-a421-41fe-88ab-c79b48e658b5" />
+
+- Imputed data MSE and MAE error is extremely large.
+  - This error is potentially due to the difference in the range of duration between the original and imputed data.   Duration is much larger in the imputed data than the original data, so the model may not be extrapolating well.
+  - In addition, the method of imputing body temperature may not have been accurate and thrown the model off.
+- When training the non-imputed data with the top four model methods, the boosted tree still performed the best. This shows that the boosted method seems to work the best for a calorie prediction problem.
+
 
 ---
 ## ⌚ Real-World Application: Apple Watch vs XGBoost Model
