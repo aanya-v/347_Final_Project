@@ -10,13 +10,14 @@
 ## 📊 Project Overview
 
 This project involved:
-- **Data Cleaning & Imputation**: Addressing missing values using both R and Python-based techniques.
 - **Modeling**: Comparing several models including:
   - Ordinary Least Squares (OLS)
   - Ridge, Lasso, and Elastic Net Regression
   - k-Nearest Neighbors (kNN)
   - Principal Component Regression (PCR)
   - Boosted Trees (XGBoost)
+ 
+- **Expanding to additional datasets**: via imputation and apple watch comparison analysis!
 
 ---
 
@@ -57,6 +58,13 @@ Found in the `Datasets for Imputing/` folder. These include:
 - Raw and imputed versions of exercise tracking and gym data
 - R script used to process and clean data
 
+### Imputing: 
+- The second dataset used to test the generalizability of the models lacked the variable “Body_Temp”
+- Using the original (calories.csv) and the new (gym_members_exercise_tracking.csv) datasets, kNN was utilized (through R’s VIM package) to fill in the missing values
+- This process enables the datasets to keep a similar variance for the variables with imputation
+- The new version of gym_members_exercise_tracking.csv with imputed values for “Body_Temp” was uploaded as gym_imputed.csv
+
+
 ---
 ## ⌚ Real-World Application: Apple Watch vs XGBoost Model
 
@@ -77,7 +85,7 @@ For each workout, average heart rate (HR) was recorded, and we compared the **Bo
 
 Upon examining the training dataset (`calories.csv`), we found that:
 - The **average heart rates in the training data were lower** than the real-world intense workouts.
-- While **heart rate and calorie expenditure typically exhibit a linear relationship** ([source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7275907/)), 
+- While **heart rate and calorie expenditure typically exhibit a linear relationship** 
 - Our feature importance analysis revealed that the XGBoost model **heavily weighted `Duration` over `Heart Rate`**:
   - `Duration` accounted for ~89% of total feature importance.
   - `Heart Rate` contributed only ~5%.
