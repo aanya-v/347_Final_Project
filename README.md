@@ -1,5 +1,11 @@
 
----
+# QTM 347 Final Project: Predicting Calories Burnt
+
+**Team Members**: Keely Grice, Safia Read, Aanya Vusirikala, Vicki Wang  
+**Course**: QTM 347  
+**Dataset Source**: [Kaggle – Calories Burnt Prediction](https://www.kaggle.com/datasets/ruchikakumbhar/calories-burnt-prediction)
+
+
 
 ## 📊 Project Overview
 
@@ -11,6 +17,27 @@ This project involved:
   - k-Nearest Neighbors (kNN)
   - Principal Component Regression (PCR)
   - Boosted Trees (XGBoost)
+
+---
+
+
+## 🔍 Project Motivation
+
+The motivation behind our project is to improve predictions of calorie expenditure. This is beneifical for helpingindividuals tailor workouts and manage health goals more effectively! Our project explores the predictive modeling of calories burnt using physiological (i.e. gender, age, body weight) and activity-related (i.e. duration, avg heart rate, body temp) covariates, applying a range of linear and nonlinear machine learning methods.
+
+---
+
+## 📊 Dataset Summary
+
+The core dataset contains the following features:
+- **Covariates**: `Gender`, `Age`, `Height`, `Weight`, `Duration`, `Heart Rate`, `Body Temperature`
+- **Target**: `Calories`
+
+**Preprocessing**:
+- Encoded `Gender` as a binary dummy variable.
+- Removed unnecessary identifiers (e.g., ID column).
+- No missing values in the original dataset.
+- Additional synthetic/imputed datasets were generated for model testing using VIM's kNN in R.
 
 ---
 
@@ -40,6 +67,7 @@ Found in the `Datasets for Imputing/` folder. These include:
 - pandas, numpy, matplotlib, seaborn
 - scikit-learn, xgboost
 
-To install dependencies:
+To import dataset:
 ```bash
-pip install -r requirements.txt
+import pandas as pd
+pd.read_csv('calories.csv')
