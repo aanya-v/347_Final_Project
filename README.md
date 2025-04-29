@@ -4,6 +4,7 @@
 **Team Members**: Keely Grice, Safia Read, Aanya Vusirikala, Vicki Wang  
 **Course**: QTM 347  
 **Dataset Source**: [Kaggle – Calories Burnt Prediction](https://www.kaggle.com/datasets/ruchikakumbhar/calories-burnt-prediction)
+**Slides**: [slides](https://docs.google.com/presentation/d/1Y_7LITVHI6QToPZrPtNO5PAJ5rgaScBfKeuBDorOh14/edit#slide=id.g34a8136d183_0_10)
 
 
 
@@ -59,13 +60,19 @@ The core dataset contains the following features:
 ---
 ### Results
 
-Table of error metrics for all models, ordered from least to most error.
+**Table of error metrics for all models, ordered from least to most error.**
+
+
 <img width="650" alt="Screenshot 2025-04-29 at 2 58 51 PM" src="https://github.com/user-attachments/assets/3ef6af59-29cf-422a-a458-d578b71da86d" />
 
-Chart of Test MSE and Test MAE results
+**Chart of Test MSE and Test MAE results**
+
+
 <img width="464" alt="Screenshot 2025-04-29 at 3 06 18 PM" src="https://github.com/user-attachments/assets/f26fd32c-d675-4d78-bd09-fe63ff02b91a" />
 
-Chart of R^2
+**Chart of R^2**
+
+
 <img width="421" alt="Screenshot 2025-04-29 at 3 07 21 PM" src="https://github.com/user-attachments/assets/5d2bf928-17fe-4c4f-8e70-abb91031f1dd" />
 
 - The top four performing models were Boosting, Random Forests, Bagging, and kNN.
