@@ -47,7 +47,7 @@ The core dataset contains the following features:
 
 ## 📂 Notebooks Description
 
-- **Boosted RF XGBoost.ipynb**: Gradient boosting, Random Forest, and Bagging models
+- **Tree_Methods.ipynb**: Gradient boosting, Random Forest, and Bagging models with original dataset and imputed dataset
 - **Lasso-Ridge-ElasticNet-OLS.ipynb**: Penalized regression models on original dataset (calories.csv)
 - **PCR.ipynb**: Used Principal Component Regression to implement PCA dimensionality then run a regression on the PCs
 - **QTM347-kNN.ipynb**:  Implementation of k-Nearest Neighbors to original dataset (calories.csv)
@@ -55,7 +55,6 @@ The core dataset contains the following features:
 - **kNN_imputed_non_imputed:** Tested kNN model on additional dataset (imputed version and nonimputed version) for generalizability
 - **Bagging_Imputed_NonImputed:** Tested bagging model on additional dataset (imputed version and nonimputed version) for generalizability
 - **CaloriesANN_SVR.ipynb**: Used a regression ANN and Support Vector Regression (adapted version of Support Vector Machine for regression purposes
-
 
 ---
 ### Results
@@ -137,6 +136,22 @@ Thus, even though a higher heart rate should predict greater calorie burn, the m
 > **Reference**:  
 > *Heart rate is linearly correlated with oxygen consumption and energy expenditure during dynamic exercise.*  
 > [Relationship Between Heart Rate and Energy Expenditure During Exercise (NCBI)](https://pubmed.ncbi.nlm.nih.gov/10551338/)
+
+
+---
+
+## ➡️Future Directions & Limitations
+
+### 🚧 Limitations
+- The calorie prediction model may underperform on high-intensity workouts due to lack of high heart rate observations in the original training data
+- Model feature importance is skewed toward `Duration`, which may limit generalizability to workouts with varying intensity but fixed time.
+- Extrapolation is a key limitation as the model performs best within the range of the training data(up to 314 calories burnt) and struggles when applied to real-world observations beyond that scope.
+
+###  🏋️Future Work
+- Incorporate datasets with longer workout durations and explicitly measured intensity levels 
+- Include additional covariates like workout type, motion data, and fitness experience for improved prediction.
+- Compare predictions to wearable-calculated calorie estimate (e.g., Apple Watch) using measured ground truth via calorimeter measurement 
+
 
 
 ---
