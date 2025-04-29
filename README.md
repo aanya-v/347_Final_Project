@@ -140,7 +140,7 @@ Thus, even though a higher heart rate should predict greater calorie burn, the m
 
 ---
 
-## ➡️Future Directions & Limitations
+## ➡️ Future Directions & Limitations
 
 ### 🚧 Limitations
 - The calorie prediction model may underperform on high-intensity workouts due to lack of high heart rate observations in the original training data
