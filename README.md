@@ -43,20 +43,23 @@ The core dataset contains the following features:
 
 ## 📂 Notebooks Description
 
-- **Boosted RF XGBoost.ipynb**: Basic gradient boosting implementation.
-- **BoostedRFXGBoostWithAppleWatch.ipynb**: Enhanced XGBoost model incorporating Apple Watch features.
-- **Lasso-Ridge-ElasticNet-OLS.ipynb**: Penalized regression models with baseline OLS for comparison.
-- **PCR.ipynb**: Principal Component Regression to reduce dimensionality before prediction.
-- **QTM347-kNN.ipynb**: Implementation of k-Nearest Neighbors.
-- **QTM347-OLS.ipynb**: Simple linear regression model.
+- **Boosted RF XGBoost.ipynb**: Gradient boosting, Random Forest, and Bagging models
+- **Lasso-Ridge-ElasticNet-OLS.ipynb**: Penalized regression models on original dataset (calories.csv)
+- **PCR.ipynb**: Used Principal Component Regression to implement PCA dimensionality then run a regression on the PCs
+- **QTM347-kNN.ipynb**:  Implementation of k-Nearest Neighbors to original dataset (calories.csv)
+- **QTM347-OLS.ipynb**:  Simple linear regression model with best subset and manually assigned covariates with calories.csv
 
 ---
 
-## 🗃️ Datasets
+## 🗃️ Additional Datasets
 
 Found in the `Datasets for Imputing/` folder. These include:
 - Raw and imputed versions of exercise tracking and gym data
 - R script used to process and clean data
+
+---
+## 🗃️ Apple Watch Changes
+
 
 ---
 
