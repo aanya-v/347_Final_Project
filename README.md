@@ -58,7 +58,37 @@ Found in the `Datasets for Imputing/` folder. These include:
 - R script used to process and clean data
 
 ---
-## 🗃️ Apple Watch Changes
+## ⌚ Real-World Application: Apple Watch vs XGBoost Model
+
+To evaluate our model in a real-world setting, we collected data from three 35-minute workouts of varying intensity:
+
+- **Upper Body** (Low Intensity)
+- **Leg Day** (Medium Intensity)
+- **Cardio** (High Intensity)
+
+For each workout, average heart rate (HR) was recorded, and we compared the **Boosted Tree (XGBoost)** model's predicted calories burnt to the **Apple Watch** calorie estimate.
+
+### 🔎 Observations
+
+- The model's predictions were **closer to the Apple Watch estimate for lower-intensity workouts**.
+- At **higher intensities (e.g., Cardio)**, the model **underpredicted calories burnt** compared to the Apple Watch.
+
+### 🧠 Interpretation
+
+Upon examining the training dataset (`calories.csv`), we found that:
+- The **average heart rates in the training data were lower** than the real-world intense workouts.
+- While **heart rate and calorie expenditure typically exhibit a linear relationship** ([source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7275907/)), 
+- Our feature importance analysis revealed that the XGBoost model **heavily weighted `Duration` over `Heart Rate`**:
+  - `Duration` accounted for ~89% of total feature importance.
+  - `Heart Rate` contributed only ~5%.
+
+Thus, even though a higher heart rate should predict greater calorie burn, the model relied **primarily on duration**, causing inconsistencies when extrapolating to higher heart rate ranges not well represented in the training data.
+
+---
+
+> **Reference**:  
+> *Heart rate is linearly correlated with oxygen consumption and energy expenditure during dynamic exercise.*  
+> [Relationship Between Heart Rate and Energy Expenditure During Exercise (NCBI)](https://pubmed.ncbi.nlm.nih.gov/10551338/)
 
 
 ---
