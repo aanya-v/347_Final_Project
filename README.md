@@ -51,8 +51,10 @@ The core dataset contains the following features:
 - **PCR.ipynb**: Used Principal Component Regression to implement PCA dimensionality then run a regression on the PCs
 - **QTM347-kNN.ipynb**:  Implementation of k-Nearest Neighbors to original dataset (calories.csv)
 - **QTM347-OLS.ipynb**:  Simple linear regression model with best subset and manually assigned covariates with calories.csv
-- **kNN_imputed_non_imputed** Tested kNN model on additional dataset (imputed version and nonimputed version) for generalizability
-- **Bagging_Imputed_NonImputed** Tested bagging model on additional dataset (imputed version and nonimputed version) for generalizability
+- **kNN_imputed_non_imputed:** Tested kNN model on additional dataset (imputed version and nonimputed version) for generalizability
+- **Bagging_Imputed_NonImputed:** Tested bagging model on additional dataset (imputed version and nonimputed version) for generalizability
+- **CaloriesANN_SVR.ipynb**: Used a regression ANN and Support Vector Regression (adapted version of Support Vector Machine for regression purposes
+
 
 ---
 ### Results
