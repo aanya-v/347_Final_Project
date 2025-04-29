@@ -1,5 +1,5 @@
 
-# QTM 347 Final Project: Predicting Calories Burnt
+# QTM 347 Final Project: Predicting Calories Burnt 🔥🔥🔥
 
 **Team Members**: Keely Grice, Safia Read, Aanya Vusirikala, Vicki Wang  
 **Course**: QTM 347  
