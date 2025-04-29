@@ -27,7 +27,7 @@ This project involved:
 
 ## 🔍 Project Motivation
 
-The motivation behind our project is to improve predictions of calorie expenditure. This is beneifical for helpingindividuals tailor workouts and manage health goals more effectively! Our project explores the predictive modeling of calories burnt using physiological (i.e. gender, age, body weight) and activity-related (i.e. duration, avg heart rate, body temp) covariates, applying a range of linear and nonlinear machine learning methods.
+The motivation behind our project is to improve predictions of calorie expenditure. This is beneifical for helping individuals tailor workouts and manage health goals more effectively! Our project explores the predictive modeling of calories burnt using physiological (i.e. gender, age, body weight) and activity-related (i.e. duration, avg heart rate, body temp) covariates, applying a range of linear and nonlinear machine learning methods.
 
 ---
 
