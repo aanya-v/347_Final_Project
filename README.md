@@ -10,12 +10,14 @@
 ## 📊 Project Overview
 
 This project involved:
-- **Modeling**: Comparing several models including:
+- **Modeling**: Comparing eleven models including:
   - Ordinary Least Squares (OLS)
   - Ridge, Lasso, and Elastic Net Regression
   - k-Nearest Neighbors (kNN)
   - Principal Component Regression (PCR)
   - Boosted Trees (XGBoost)
+  - Artificial Neural Net (ANN)
+  - Support Vector Regression (SVR)
  
 - **Expanding to additional datasets**: via imputation and apple watch comparison analysis!
 
@@ -49,7 +51,16 @@ The core dataset contains the following features:
 - **PCR.ipynb**: Used Principal Component Regression to implement PCA dimensionality then run a regression on the PCs
 - **QTM347-kNN.ipynb**:  Implementation of k-Nearest Neighbors to original dataset (calories.csv)
 - **QTM347-OLS.ipynb**:  Simple linear regression model with best subset and manually assigned covariates with calories.csv
+- **kNN_imputed_non_imputed** Tested kNN model on additional dataset (imputed version and nonimputed version) for generalizability
+- **Bagging_Imputed_NonImputed** Tested bagging model on additional dataset (imputed version and nonimputed version) for generalizability
 
+---
+### Results
+
+<img width="650" alt="Screenshot 2025-04-29 at 2 58 51 PM" src="https://github.com/user-attachments/assets/3ef6af59-29cf-422a-a458-d578b71da86d" />
+
+- The top four performing models were Boosting, Random Forests, Bagging, and kNN.
+- Boosting performed the best.
 ---
 
 ## 🗃️ Additional Datasets
@@ -64,6 +75,8 @@ Found in the `Datasets for Imputing/` folder. These include:
 - This process enables the datasets to keep a similar variance for the variables with imputation
 - The new version of gym_members_exercise_tracking.csv with imputed values for “Body_Temp” was uploaded as gym_imputed.csv
 
+---
+### Imputing Results
 
 ---
 ## ⌚ Real-World Application: Apple Watch vs XGBoost Model
